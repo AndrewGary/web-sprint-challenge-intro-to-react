@@ -79,6 +79,11 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React was built because using Vanilla JS to produce HTML is fairly easy on small websites/applications but once your website scales Vanilla JS becomes very very confusing.
+
 1. Describe component state.
+Component state is data that lives inside of your React Application, when the component state(data) is updated any refrence to the state(throughout our whole ReactJS app) will be updated along with it.
 1. Describe props.
+  Props are objects that are passed down from parent components to the neccisary child components.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  Side effects are functions that can be synced to specific state or props data by passing in an array of state or props as the second argument (ex. [state1, state2, propX]) when calling useEffect(functionx, [state, prop]). Whenever changes happen to any state/prop refrenced in the array, the function(first argument in useEffect()) will run. A side effect of the changes in state or prop.
